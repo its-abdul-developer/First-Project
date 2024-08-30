@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 60px;
+    gap: 30px;
+}
+
+#nav h4{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+#nav i{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+#center{
+    width: 100%;
+    padding: 0 100px;
+    margin-top: 30px;
+}
+
+#center h4{
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 6vw;
+}
+
+#center-in{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-top: 30px;
+    padding: 20px 0 40px 10px;
+}
+
+#center-in p{
+    font-size: 1.05vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 2vw;
+}
+
+#right{
+    width: 20%;
+}
+.elem{
+    padding: 20px;
+    /* background-color: rgb(200, 255, 0); */
+    /* margin: 5px; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem a{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.elem i{
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.elem:hover i{
+    opacity: 1;
+}
+
+#bottom{
+    width: 100%;
+    height: 35vh;
+    /* background-color: red; */
+    background-image: url(./pexels-omarlopezphil-1182825.jpg);
+    background-size: cover;
+    background-position: 0 30%;
+}
+
+@media (max-width:600px) {
+    #nav{
+        height: 70px;
+        padding: 0 40px;
+        gap: 10px;
+    }
+    #nav h4{
+        font-size: 13px;
+    }
+    
+    #nav i{ 
+        font-size: 20px;
+    }
+   
+    #center{
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    
+    #center h4{
+        font-size: 10.5vw;
+        line-height: 12vw;
+    }
+
+    #center-in{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
+         
+    }
+    
+    #center-in p{
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    #right{
+        width: 100%;
+    }
+    .elem{
+        padding: 5px;
+        border-top: 1.2px solid black;
+        margin-top: 20px;
+
+    }
+    .elem a{
+        
+        font-size: 15px;
+        font-weight: 500;
+        color: #303030;
+       
+    }
+    
+    .elem i{
+        font-size: 15px;
+        font-weight: 500;
+        /* opacity: 1; */
+        color: #303030;
+    }
+    
+}
